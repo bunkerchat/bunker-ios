@@ -1,0 +1,43 @@
+1. GET to /
+	Sails authentication cookie gets set on response: sails.sid=<sidVal>; Path=/; HttpOnly
+
+
+2. Google Auth info:
+				<span class="g-signin"
+						data-scope="profile email"
+						data-clientid="744915257573-ri8suktjsu5s1b3jddkacm6k0a45vi02.apps.googleusercontent.com"
+						data-redirecturi="postmessage"
+						data-accesstype="offline"
+						data-cookiepolicy="single_host_origin"
+						data-callback="signInCallback">
+	
+	Once authenticated with Google, make following call:					
+	POST to /auth/googleCallback
+	Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+	sample post body:
+	
+	code=4%2Fq5pLsqaNw-TBECJP418ukATbO14oEPvvJIolsq5uztI
+	
+	Response can/should be ignored
+
+	
+3. Connect using socket IO using the following URL?? 	
+	http://localhost:9002/socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3
+	
+4. Emit socket IO event to '/init' with a payload that looks like the following:
+	["get",{"method":"get","headers":{},"data":{},"url":"/init"}]
+	
+	You should get a big blob of data back in one or two events.
+	
+	
+	
+	
+// Ignore	
+3. Request to get socket ID... make sure authentication cookie from #1 is on request.  This step might be handled by socket IO.
+	GET http://localhost:9002/socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1447020905465-0
+	"sid" value in response is socket ID: ÿ0{"sid":"PtwO7kNTAqPgazR5AAAE","upgrades":["websocket"],"pingInterval":25000,"pingTimeout":60000}
+
+// Ignore	
+4. Connect to web sockets using the following URL (note the "sid" parameter is the value returned from step 3):
+	GET ws://localhost:9002/socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=websocket&sid=PtwO7kNTAqPgazR5AAAE
