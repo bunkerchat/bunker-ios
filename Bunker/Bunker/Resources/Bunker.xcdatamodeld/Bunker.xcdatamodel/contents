@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Message" syncable="YES">
+        <relationship name="room" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="posts" inverseEntity="Room" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="messages" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Room" syncable="YES">
+        <relationship name="posts" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="room" inverseEntity="Message" syncable="YES"/>
+        <relationship name="users" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="room" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <relationship name="messages" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="user" inverseEntity="Message" syncable="YES"/>
+        <relationship name="room" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="users" inverseEntity="Room" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Room" positionX="-486" positionY="-9" width="128" height="73"/>
+        <element name="User" positionX="-171" positionY="-108" width="128" height="73"/>
+        <element name="Message" positionX="-173" positionY="-9" width="128" height="73"/>
+    </elements>
+</model>

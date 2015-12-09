@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20977111C183BE000A2618F /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20977101C183BE000A2618F /* Room.storyboard */; };
 		B2FAF1631BFA051500F9C8AF /* BunkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1621BFA051500F9C8AF /* BunkerTests.swift */; };
 		B2FAF16E1BFA051500F9C8AF /* BunkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF16D1BFA051500F9C8AF /* BunkerUITests.swift */; };
 		B2FAF1911BFA087D00F9C8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1861BFA087D00F9C8AF /* AppDelegate.swift */; };
 		B2FAF1921BFA087D00F9C8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1861BFA087D00F9C8AF /* AppDelegate.swift */; };
 		B2FAF1931BFA087D00F9C8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1861BFA087D00F9C8AF /* AppDelegate.swift */; };
-		B2FAF1941BFA087D00F9C8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* ViewController.swift */; };
-		B2FAF1951BFA087D00F9C8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* ViewController.swift */; };
-		B2FAF1961BFA087D00F9C8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* ViewController.swift */; };
+		B2FAF1941BFA087D00F9C8AF /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* RoomViewController.swift */; };
+		B2FAF1951BFA087D00F9C8AF /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* RoomViewController.swift */; };
+		B2FAF1961BFA087D00F9C8AF /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF1871BFA087D00F9C8AF /* RoomViewController.swift */; };
 		B2FAF19A1BFA087D00F9C8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18A1BFA087D00F9C8AF /* LaunchScreen.storyboard */; };
 		B2FAF19B1BFA087D00F9C8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18A1BFA087D00F9C8AF /* LaunchScreen.storyboard */; };
 		B2FAF19C1BFA087D00F9C8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18A1BFA087D00F9C8AF /* LaunchScreen.storyboard */; };
-		B2FAF19D1BFA087D00F9C8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18C1BFA087D00F9C8AF /* Main.storyboard */; };
-		B2FAF19E1BFA087D00F9C8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18C1BFA087D00F9C8AF /* Main.storyboard */; };
-		B2FAF19F1BFA087D00F9C8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FAF18C1BFA087D00F9C8AF /* Main.storyboard */; };
 		B2FAF1A01BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF18E1BFA087D00F9C8AF /* Bunker.xcdatamodeld */; };
 		B2FAF1A11BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF18E1BFA087D00F9C8AF /* Bunker.xcdatamodeld */; };
 		B2FAF1A21BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2FAF18E1BFA087D00F9C8AF /* Bunker.xcdatamodeld */; };
@@ -896,6 +894,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B20977101C183BE000A2618F /* Room.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Room.storyboard; sourceTree = "<group>"; };
 		B2FAF1471BFA051500F9C8AF /* Bunker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bunker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FAF1591BFA051500F9C8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FAF15E1BFA051500F9C8AF /* BunkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BunkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -905,9 +904,8 @@
 		B2FAF16D1BFA051500F9C8AF /* BunkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunkerUITests.swift; sourceTree = "<group>"; };
 		B2FAF16F1BFA051500F9C8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FAF1861BFA087D00F9C8AF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2FAF1871BFA087D00F9C8AF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2FAF1871BFA087D00F9C8AF /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B2FAF18B1BFA087D00F9C8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B2FAF18D1BFA087D00F9C8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2FAF18F1BFA087D00F9C8AF /* Bunker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bunker.xcdatamodel; sourceTree = "<group>"; };
 		B2FAF1901BFA087D00F9C8AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2FAF1A71BFA0C9E00F9C8AF /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
@@ -1272,7 +1270,8 @@
 			isa = PBXGroup;
 			children = (
 				B2FAF1861BFA087D00F9C8AF /* AppDelegate.swift */,
-				B2FAF1871BFA087D00F9C8AF /* ViewController.swift */,
+				B2FAF1871BFA087D00F9C8AF /* RoomViewController.swift */,
+				B20977101C183BE000A2618F /* Room.storyboard */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1283,7 +1282,6 @@
 				B2FAF1A61BFA0C9E00F9C8AF /* emoticons */,
 				B2FAF2991BFA0C9E00F9C8AF /* fatalities */,
 				B2FAF18A1BFA087D00F9C8AF /* LaunchScreen.storyboard */,
-				B2FAF18C1BFA087D00F9C8AF /* Main.storyboard */,
 				B2FAF18E1BFA087D00F9C8AF /* Bunker.xcdatamodeld */,
 				B2FAF1901BFA087D00F9C8AF /* Images.xcassets */,
 			);
@@ -1772,12 +1770,12 @@
 				B2FAF4D01BFA0C9E00F9C8AF /* russia.gif in Resources */,
 				B2FAF4971BFA0C9E00F9C8AF /* poo.png in Resources */,
 				B2FAF4CA1BFA0C9E00F9C8AF /* rolleyes.gif in Resources */,
+				B20977111C183BE000A2618F /* Room.storyboard in Resources */,
 				B2FAF5B71BFA0C9E00F9C8AF /* kano2.gif in Resources */,
 				B2FAF34D1BFA0C9E00F9C8AF /* damn.gif in Resources */,
 				B2FAF55A1BFA0C9E00F9C8AF /* trump.png in Resources */,
 				B2FAF3CE1BFA0C9E00F9C8AF /* guitar.gif in Resources */,
 				B2FAF3B61BFA0C9E00F9C8AF /* getin.gif in Resources */,
-				B2FAF19D1BFA087D00F9C8AF /* Main.storyboard in Resources */,
 				B2FAF4BB1BFA0C9E00F9C8AF /* rant.gif in Resources */,
 				B2FAF3291BFA0C9E00F9C8AF /* chrome.gif in Resources */,
 				B2FAF4AC1BFA0C9E00F9C8AF /* qq.gif in Resources */,
@@ -2070,7 +2068,6 @@
 				B2FAF55B1BFA0C9E00F9C8AF /* trump.png in Resources */,
 				B2FAF3CF1BFA0C9E00F9C8AF /* guitar.gif in Resources */,
 				B2FAF3B71BFA0C9E00F9C8AF /* getin.gif in Resources */,
-				B2FAF19E1BFA087D00F9C8AF /* Main.storyboard in Resources */,
 				B2FAF4BC1BFA0C9E00F9C8AF /* rant.gif in Resources */,
 				B2FAF32A1BFA0C9E00F9C8AF /* chrome.gif in Resources */,
 				B2FAF4AD1BFA0C9E00F9C8AF /* qq.gif in Resources */,
@@ -2363,7 +2360,6 @@
 				B2FAF55C1BFA0C9E00F9C8AF /* trump.png in Resources */,
 				B2FAF3D01BFA0C9E00F9C8AF /* guitar.gif in Resources */,
 				B2FAF3B81BFA0C9E00F9C8AF /* getin.gif in Resources */,
-				B2FAF19F1BFA087D00F9C8AF /* Main.storyboard in Resources */,
 				B2FAF4BD1BFA0C9E00F9C8AF /* rant.gif in Resources */,
 				B2FAF32B1BFA0C9E00F9C8AF /* chrome.gif in Resources */,
 				B2FAF4AE1BFA0C9E00F9C8AF /* qq.gif in Resources */,
@@ -2573,7 +2569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FAF1941BFA087D00F9C8AF /* ViewController.swift in Sources */,
+				B2FAF1941BFA087D00F9C8AF /* RoomViewController.swift in Sources */,
 				B2FAF1911BFA087D00F9C8AF /* AppDelegate.swift in Sources */,
 				B2FAF1A01BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */,
 			);
@@ -2583,7 +2579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FAF1951BFA087D00F9C8AF /* ViewController.swift in Sources */,
+				B2FAF1951BFA087D00F9C8AF /* RoomViewController.swift in Sources */,
 				B2FAF1921BFA087D00F9C8AF /* AppDelegate.swift in Sources */,
 				B2FAF1A11BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */,
 				B2FAF1631BFA051500F9C8AF /* BunkerTests.swift in Sources */,
@@ -2594,7 +2590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FAF1961BFA087D00F9C8AF /* ViewController.swift in Sources */,
+				B2FAF1961BFA087D00F9C8AF /* RoomViewController.swift in Sources */,
 				B2FAF1931BFA087D00F9C8AF /* AppDelegate.swift in Sources */,
 				B2FAF1A21BFA087D00F9C8AF /* Bunker.xcdatamodeld in Sources */,
 				B2FAF16E1BFA051500F9C8AF /* BunkerUITests.swift in Sources */,
@@ -2623,14 +2619,6 @@
 				B2FAF18B1BFA087D00F9C8AF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		B2FAF18C1BFA087D00F9C8AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2FAF18D1BFA087D00F9C8AF /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2808,6 +2796,7 @@
 				B2FAF1741BFA051500F9C8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FAF1751BFA051500F9C8AF /* Build configuration list for PBXNativeTarget "BunkerTests" */ = {
 			isa = XCConfigurationList;
@@ -2816,6 +2805,7 @@
 				B2FAF1771BFA051500F9C8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FAF1781BFA051500F9C8AF /* Build configuration list for PBXNativeTarget "BunkerUITests" */ = {
 			isa = XCConfigurationList;
@@ -2824,6 +2814,7 @@
 				B2FAF17A1BFA051500F9C8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

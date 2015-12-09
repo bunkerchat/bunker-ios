@@ -47,11 +47,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="iEV-Pf-KUy"/>
-                                <exclude reference="n0W-Gn-qAT"/>
                                 <exclude reference="Jfb-aH-kg0"/>
                                 <exclude reference="X3P-51-BVY"/>
                                 <exclude reference="f4G-YP-Es7"/>
+                                <exclude reference="iEV-Pf-KUy"/>
+                                <exclude reference="n0W-Gn-qAT"/>
                             </mask>
                         </variation>
                     </view>
