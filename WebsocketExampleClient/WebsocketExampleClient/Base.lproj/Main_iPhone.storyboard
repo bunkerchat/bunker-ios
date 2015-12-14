@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HAl-KQ-Grg"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Mf-aF-dGo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="use-ip-QUW">
+                                <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPM-Ce-VA9">
+                                        <rect key="frame" x="20" y="18" width="236" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="lSy-mR-oAk"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hC-cm-8RB">
+                                        <rect key="frame" x="264" y="18" width="36" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="vbd-AA-BEk"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tUA-Xr-Xlk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yPM-Ce-VA9" secondAttribute="bottom" constant="18" id="6RW-d5-EYJ"/>
+                                    <constraint firstItem="6hC-cm-8RB" firstAttribute="leading" secondItem="yPM-Ce-VA9" secondAttribute="trailing" constant="8" id="7eY-Ic-IGC"/>
+                                    <constraint firstItem="6hC-cm-8RB" firstAttribute="leading" secondItem="yPM-Ce-VA9" secondAttribute="trailing" constant="8" id="8Ed-wy-DkX"/>
+                                    <constraint firstItem="yPM-Ce-VA9" firstAttribute="top" secondItem="use-ip-QUW" secondAttribute="top" constant="18" id="HuB-0x-NhV"/>
+                                    <constraint firstItem="yPM-Ce-VA9" firstAttribute="centerY" secondItem="use-ip-QUW" secondAttribute="centerY" id="Wfq-YX-iQ8"/>
+                                    <constraint firstItem="yPM-Ce-VA9" firstAttribute="leading" secondItem="use-ip-QUW" secondAttribute="leading" constant="20" id="ZF1-zn-qUj"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hC-cm-8RB" secondAttribute="trailing" constant="20" id="abz-1b-mUN"/>
+                                    <constraint firstItem="yPM-Ce-VA9" firstAttribute="centerY" secondItem="6hC-cm-8RB" secondAttribute="centerY" id="udx-10-jOl"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Welcome to WebsocketExampleClient." translatesAutoresizingMaskIntoConstraints="NO" id="ZMh-s2-qzK">
+                                <rect key="frame" x="0.0" y="20" width="320" height="482"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJl-Gb-KZX">
+                                <rect key="frame" x="243" y="464" width="57" height="30"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EHt-Ws-1U0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKF-Tx-O9S" customClass="GIDSignInButton">
+                                <rect key="frame" x="20" y="458" width="120" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RHm-m4-cAw"/>
+                                    <constraint firstAttribute="height" constant="44" id="pty-WZ-S7d"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0S-rn-N2U">
+                                <rect key="frame" x="173" y="464" width="62" height="30"/>
+                                <state key="normal" title="Webview"/>
+                                <connections>
+                                    <segue destination="JTB-fU-hqt" kind="modal" id="vpK-ut-0dJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="use-ip-QUW" firstAttribute="top" secondItem="ZMh-s2-qzK" secondAttribute="bottom" id="6yh-hJ-YSz"/>
+                            <constraint firstItem="use-ip-QUW" firstAttribute="top" secondItem="nJl-Gb-KZX" secondAttribute="bottom" constant="8" id="7NJ-rv-Lnh"/>
+                            <constraint firstItem="use-ip-QUW" firstAttribute="top" secondItem="x0S-rn-N2U" secondAttribute="bottom" constant="8" id="EVn-NN-VhC"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMh-s2-qzK" secondAttribute="trailing" id="Id1-t4-pj6"/>
+                            <constraint firstItem="ZMh-s2-qzK" firstAttribute="top" secondItem="HAl-KQ-Grg" secondAttribute="bottom" id="Mpg-ve-752"/>
+                            <constraint firstItem="nJl-Gb-KZX" firstAttribute="leading" secondItem="x0S-rn-N2U" secondAttribute="trailing" constant="8" id="NhM-OB-wwA"/>
+                            <constraint firstItem="5Mf-aF-dGo" firstAttribute="top" secondItem="use-ip-QUW" secondAttribute="bottom" id="U9Q-Bc-Qa6"/>
+                            <constraint firstAttribute="trailing" secondItem="nJl-Gb-KZX" secondAttribute="trailing" constant="20" id="VB6-mu-fNA"/>
+                            <constraint firstItem="ZMh-s2-qzK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="lwe-34-FUu"/>
+                            <constraint firstItem="use-ip-QUW" firstAttribute="top" secondItem="XKF-Tx-O9S" secondAttribute="bottom" id="t2z-Ah-xB0"/>
+                            <constraint firstItem="use-ip-QUW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vcq-bE-ahz"/>
+                            <constraint firstAttribute="trailing" secondItem="use-ip-QUW" secondAttribute="trailing" id="z3Z-Po-F3s"/>
+                            <constraint firstItem="XKF-Tx-O9S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="zFj-y4-1pe"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="containerView" destination="use-ip-QUW" id="Aai-jx-vRi"/>
+                        <outlet property="messageTextField" destination="yPM-Ce-VA9" id="FPa-wW-Z6k"/>
+                        <outlet property="messagesTextView" destination="ZMh-s2-qzK" id="aKP-YB-jzH"/>
+                        <outlet property="signInButton" destination="XKF-Tx-O9S" id="edb-Vp-p4A"/>
+                        <outlet property="signOutButton" destination="nJl-Gb-KZX" id="6YL-dH-cnA"/>
+                        <outlet property="webAuthButton" destination="x0S-rn-N2U" id="vpD-mV-uaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="404"/>
+        </scene>
+        <!--Google Web Auth View Controller-->
+        <scene sceneID="Tkk-xA-kGT">
+            <objects>
+                <viewController id="JTB-fU-hqt" customClass="GoogleWebAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ck-V0-1Kz"/>
+                        <viewControllerLayoutGuide type="bottom" id="AX7-lD-RJm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OrQ-oI-8hH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEH-RV-rR3">
+                                <rect key="frame" x="273" y="530" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <segue destination="Lrb-1J-vVu" kind="unwind" identifier="closeSegue" unwindAction="prepareForUnwind:" id="Jtg-Cr-TmG"/>
+                                </connections>
+                            </button>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-tl-skt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FNa-tl-skt" firstAttribute="leading" secondItem="OrQ-oI-8hH" secondAttribute="leading" id="T0L-W1-JIn"/>
+                            <constraint firstItem="AX7-lD-RJm" firstAttribute="top" secondItem="HEH-RV-rR3" secondAttribute="bottom" constant="8" id="Z4E-Wl-oA6"/>
+                            <constraint firstAttribute="trailing" secondItem="FNa-tl-skt" secondAttribute="trailing" id="aGD-I7-v9K"/>
+                            <constraint firstItem="AX7-lD-RJm" firstAttribute="top" secondItem="FNa-tl-skt" secondAttribute="bottom" constant="44" id="cJi-C0-WAd"/>
+                            <constraint firstItem="FNa-tl-skt" firstAttribute="top" secondItem="OrQ-oI-8hH" secondAttribute="top" id="fW5-Dv-Qcs"/>
+                            <constraint firstAttribute="trailing" secondItem="HEH-RV-rR3" secondAttribute="trailing" constant="8" id="tIY-k5-rW2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleAuthWebview" destination="FNa-tl-skt" id="OLH-Xx-3CR"/>
+                        <segue destination="Lrb-1J-vVu" kind="unwind" identifier="doneSegue" unwindAction="prepareForUnwind:" id="anA-Z5-eYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wd2-YW-XBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lrb-1J-vVu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="404"/>
+        </scene>
+    </scenes>
+</document>

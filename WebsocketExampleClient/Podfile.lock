@@ -1,0 +1,47 @@
+PODS:
+  - Google (1.1.1):
+    - Google/Core (= 1.1.1)
+  - Google/Core (1.1.1):
+    - GoogleInterchangeUtilities (~> 1.0)
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.1)
+  - GoogleAppUtilities (1.0.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleAuthUtilities (1.0.1):
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleInterchangeUtilities (1.0.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleNetworkingUtilities (1.0.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSignIn (2.4.0):
+    - GoogleAppUtilities (~> 1.0)
+    - GoogleAuthUtilities (~> 1.0)
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.0.0)
+  - GoogleUtilities (1.1.0):
+    - GoogleSymbolUtilities (~> 1.0.0)
+  - Socket.IO-Client-Swift (4.1.1)
+  - SocketRocket (0.4.2)
+
+DEPENDENCIES:
+  - Google
+  - GoogleSignIn
+  - Socket.IO-Client-Swift (~> 4.1.1)
+  - SocketRocket
+
+SPEC CHECKSUMS:
+  Google: 529a5d8719dff90ea2e7cba5f45302cd359b5456
+  GoogleAppUtilities: c01c6a5671e9da8b9d690fdaec5959d6c2aac699
+  GoogleAuthUtilities: 049ffd3a297cdffd271451b82fd4e75304f15ef3
+  GoogleInterchangeUtilities: fe088bea8c936218e52324a004d279c4491b9d65
+  GoogleNetworkingUtilities: 292992ab31b7b4ba32809a0e8b40e324cdfb2c0c
+  GoogleSignIn: 79929b51e6299c69f1197bbd9c7a1367d523ecd8
+  GoogleSymbolUtilities: a7b0feed1fe667c8d5e647177938d0ecd62d6948
+  GoogleUtilities: 8ed9134debe11719097881711464752900668f10
+  Socket.IO-Client-Swift: 2620dbb779edbbd0bc0cac96c053ca7c35aba652
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+
+COCOAPODS: 0.39.0
